@@ -135,5 +135,5 @@ To get started with any of these projects:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/ML-Projects-Collection.git
+   git clone https://github.com/dr4gon01/ML-Pojects.git
    cd ML-Projects-Collection
