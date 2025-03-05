@@ -72,15 +72,15 @@ Utilize (or simulate) transaction data to classify whether a transaction is frau
 
 **Steps:**
 - **Data Acquisition:**  
-  Use publicly available datasets (e.g., Kaggle’s "Credit Card Fraud Detection") or simulate realistic financial transaction data.
+  Use publicly available datasets (e.g., Kaggle’s "Credit Card Fraud Detection")
 - **Preprocessing & Feature Engineering:**  
-  Clean the data, handle class imbalance if necessary, and engineer features such as transaction amount, time, and location.
+  Cleaning wasn't needed the data was already clean
 - **Modeling:**  
-  Train a classifier (e.g., Random Forest, XGBoost, or a neural network) for fraud detection or a regression model for credit scoring.
+  Trained a classifier (Random Forest, tested on XGBoost but Random forest was better performing)
 - **Evaluation:**  
-  Use appropriate metrics such as ROC-AUC, precision/recall for classification or RMSE for regression.
+  Use appropriate metrics such as ROC-AUC, precision/recall for this use-case (classification)
 - **Deployment:**  
-  Package the model in a REST API using Flask or FastAPI and deploy on a cloud service (Heroku, AWS, or Azure).
+  Packaged the model in a REST API using Flask and deployed it to a cloud service (Heroku, AWS, or Azure).
 - **MLOps Touch:**  
   Integrate logging for predictions and set up basic monitoring with a dashboard or alert system.
 
