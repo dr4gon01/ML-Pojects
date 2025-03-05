@@ -35,7 +35,7 @@ Each project is accompanied by detailed documentation, source code, and instruct
 
 ## Projects
 
-### 1. Image Compression
+### 1. Image Compression ✅
 
 **Project Idea:**  
 Reduce image file sizes without significant quality loss using advanced compression techniques.
@@ -62,7 +62,7 @@ Reduce image file sizes without significant quality loss using advanced compress
 - **SVD-based Compression:**  
   Applies Singular Value Decomposition (SVD) to decompose the image matrix, allowing reconstruction with fewer singular values for compression.
 
-### 2. Financial Services ML Project
+### 2. Financial Services ML Project ✅
 
 **Project Idea:**  
 Develop a fraud detection or credit risk model using a big data approach.
