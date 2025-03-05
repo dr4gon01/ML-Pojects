@@ -6,8 +6,8 @@ Welcome to the **ML Projects Collection** repository! This repository showcases 
 
 - [Overview](#overview)
 - [Projects](#projects)
-  - [1. Image Compression](#1-image-compression)
-  - [2. Financial Services ML Project](#2-financial-services-ml-project)
+  - [1. Image Compression](###1-image-compression)
+  - [2. Financial Services ML Project](###2-financial-services-ml-project)
   - [3. Manufacturing ML Project](#3-manufacturing-ml-project)
   - [4. Transportation & Logistics ML Project](#4-transportation--logistics-ml-project)
 - [Getting Started](#getting-started)
