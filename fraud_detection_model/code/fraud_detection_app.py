@@ -11,6 +11,9 @@ app = Flask(__name__)
 #load the trained fraud detection model
 model = joblib.load("../output/fraud_detection_model_rf.pkl")
 
+# Print the expected feature names
+print("Expected Features:", model.feature_names_in_)
+
 @app.route("/predict", methods=['POST'])
 def predict():
     try:
@@ -21,10 +24,10 @@ def predict():
         df = pd.DataFrame([data])
 
         #check if head of the df
-        print(df.head())
+        print("Received Data:\n", df.head())
 
         #print the value of the first element
-        print(df[0])
+        print("First Row Values:\n", df.iloc[0])
 
         #make predictions for the first item
         prediction = model.predict(df)[0]
@@ -39,9 +42,18 @@ def predict():
         #return result
         return jsonify({'fraud': prediction_int})
 
+
     except Exception as e:
+
+        print(f"Error: {e}")  # Print error to console
+
         return jsonify({'error': str(e)})
+
 
 #run it automatically
 if __name__ == "__main__":
+    #check the local http://127.0.0.1:5000/predict
+
+    #for local testing use
+    # run the code from test.txt
     app.run(debug=True)
