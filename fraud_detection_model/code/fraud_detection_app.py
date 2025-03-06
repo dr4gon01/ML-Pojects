@@ -2,14 +2,21 @@
 from flask import Flask, request, jsonify
 import joblib
 import pandas as pd
+import os
 
 
 #initialize flask app
 app = Flask(__name__)
 
+# Get the absolute path of the current file
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-#load the trained fraud detection model
-model = joblib.load("../output/fraud_detection_model_rf.pkl")
+# Construct the correct path to the model file
+model_path = os.path.join(BASE_DIR, "../output/fraud_detection_model_rf.pkl")
+
+# Load the model
+model = joblib.load(model_path)
+
 
 # Print the expected feature names
 print("Expected Features:", model.feature_names_in_)
