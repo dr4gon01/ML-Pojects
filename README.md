@@ -80,7 +80,7 @@ Utilize (or simulate) transaction data to classify whether a transaction is frau
 - **Evaluation:**  
   Use appropriate metrics such as ROC-AUC, precision/recall for this use-case (classification)
 - **Deployment:**  
-  Packaged the model in a REST API using Flask and deployed it to a cloud service (Heroku, AWS, or Azure).
+  Packaged the model in a REST API using Flask locally and deployed it to a cloud service Render.
 - **MLOps Touch:**  
   Integrate logging for predictions and set up basic monitoring with a dashboard or alert system.
 
