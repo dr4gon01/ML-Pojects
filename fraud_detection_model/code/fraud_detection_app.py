@@ -14,7 +14,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # Construct the correct path to the model file
 model_path = os.path.join(BASE_DIR, "../output/fraud_detection_model_rf.pkl")
 
-# Load the model
+# Load the model, but the downside of joblibs & pickles: Insecure, vulnerable to attacks
 model = joblib.load(model_path)
 
 
